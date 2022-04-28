@@ -21,7 +21,7 @@ public class PostmanEchoTest {
                 .statusCode(200)
                 .contentType(ContentType.JSON)
                 .body("data", equalTo("Test"))
-                .body("headers.content-length", equalTo("5"))
+                .body("headers.content-length", equalTo("4"))
                 .body("headers.accept-encoding", equalTo("gzip,deflate"))
                 .body("headers.content-type", equalTo("text/plain; charset=ISO-8859-1"))
                 .body("headers.user-agent", equalTo("Apache-HttpClient/4.5.3 (Java/11.0.13)"))
